@@ -1,0 +1,31 @@
+# macOS system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Node modules (if any JS tooling is added)
+node_modules/
+
+# Python virtual environments
+venv/
+.env/
+__pycache__/
+
+# Log files
+*.log
+
+# Build output
+/dist/
+/build/
+
+# OS/Editor swap and temp files
+*~
+*.swp
+*.tmp
+
+# Thumbnails
+Thumbs.db
+
+# Ignore asset cache
+assets/.cache/
