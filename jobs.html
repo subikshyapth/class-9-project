@@ -3,163 +3,242 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Job Listings</title>
- <link rel="stylesheet" href="assets/style.css">
+<title>All Jobs | FindJob</title>
+<link rel="stylesheet" href="assets/style.css">
 </head>
-
 <body>
+<div class="page">
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html"><span>Find</span><em>Job</em></a>
+            <nav class="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="jobs.html">Jobs</a>
+                <div class="nav-dropdown">
+                    <span class="nav-link dropdown-toggle">Categories ▾</span>
+                    <div class="dropdown-panel">
+                        <a href="backend.html">Backend</a>
+                        <a href="afterfrontenddeveloper.html">Frontend</a>
+                        <a href="contentwritter.html">Content Writer</a>
+                        <a href="afteruidesigner.html">UI/UX Designer</a>
+                        <a href="dataanalyst.html">Data Analyst</a>
+                        <a href="devops.html">DevOps</a>
+                        <a href="digitalmarketing.html">Digital Marketing</a>
+                        <a href="flutter.html">Flutter</a>
+                        <a href="projectmanager.html">Project Manager</a>
+                        <a href="qa.html">QA</a>
+                    </div>
+                </div>
+                <a class="nav-link" href="form.html">Apply</a>
+            </nav>
+            <div class="nav-actions">
+                <a class="btn btn-ghost" href="login.html">Log in</a>
+                <a class="btn btn-primary" href="profile.html">Profile</a>
+            </div>
+        </div>
+    </header>
 
-    <!-- Navbar -->
-    <div class="navbar">
-        <h2>FindJob</h2>
-        <div class="menu">
-            <a href="index.html">Home</a>
-            <div class="dropdown">
-                <a href="#" class="dropbtn">Category &#9662;</a>
-                <div class="dropdown-content">
-                    <a href="backend.html">Backend</a>
-                    <a href="afterfrontenddeveloper.html">Frontend</a>
-                    <a href="contentwritter.html">Content Writer</a>
-                    <a href="afteruidesigner.html">UI/UX Designer</a>
-                    <a href="dataanalyst.html">Data Analyst</a>
-                    <a href="devops.html">DevOps</a>
-                    <a href="digitalmarketing.html">Digital Marketing</a>
-                    <a href="flutter.html">Flutter</a>
-                    <a href="projectmanager.html">Project Manager</a>
-                    <a href="qa.html">QA</a>
+    <main>
+        <section class="page-head">
+            <div class="container">
+                <h1>All open roles</h1>
+                <p>128 roles across engineering, product, design, and growth. Updated daily with verified salary ranges.</p>
+                <div class="stats-row">
+                    <div class="stat">New today: <strong>14</strong></div>
+                    <div class="stat">Remote-friendly: <strong>68%</strong></div>
+                    <div class="stat">Avg. response time: <strong>4.1 days</strong></div>
                 </div>
             </div>
-            <a href="jobs.html">Jobs</a>
-            <a href="#">Login</a>
-            <a href="#">Sign Up</a>
+        </section>
+
+        <section class="section">
+            <div class="container layout-two">
+                <aside class="filter-card">
+                    <div class="filter-group">
+                        <strong>Role type</strong>
+                        <label><input type="checkbox"> Full-time</label>
+                        <label><input type="checkbox"> Contract</label>
+                        <label><input type="checkbox"> Internship</label>
+                    </div>
+                    <div class="filter-group">
+                        <strong>Work mode</strong>
+                        <label><input type="checkbox"> Remote</label>
+                        <label><input type="checkbox"> Hybrid</label>
+                        <label><input type="checkbox"> On-site</label>
+                    </div>
+                    <div class="filter-group">
+                        <strong>Experience</strong>
+                        <label><input type="checkbox"> 0-2 years</label>
+                        <label><input type="checkbox"> 3-5 years</label>
+                        <label><input type="checkbox"> 6+ years</label>
+                    </div>
+                    <div class="filter-group">
+                        <strong>Top locations</strong>
+                        <label><input type="checkbox"> New York</label>
+                        <label><input type="checkbox"> Toronto</label>
+                        <label><input type="checkbox"> London</label>
+                        <label><input type="checkbox"> Remote</label>
+                    </div>
+                    <a class="btn btn-outline" href="#">Reset filters</a>
+                </aside>
+
+                <div class="job-list">
+                    <article class="card job-card">
+                        <div>
+                            <h4>Senior Backend Engineer — Payments</h4>
+                            <p>AtlasPay · Remote (US/CA)</p>
+                        </div>
+                        <div class="job-meta">
+                            <span>$155k–$180k</span>
+                            <span>Full-time</span>
+                            <span>Posted Jan 20, 2026</span>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Postgres</span>
+                            <span class="tag">Microservices</span>
+                        </div>
+                        <div class="job-actions">
+                            <span class="badge">Backend</span>
+                            <a class="btn btn-outline" href="job-details.html">Details</a>
+                            <a class="btn btn-primary" href="form.html">Apply</a>
+                        </div>
+                    </article>
+                    <article class="card job-card">
+                        <div>
+                            <h4>Frontend Engineer — Growth</h4>
+                            <p>Brightline Studio · New York, NY · Hybrid</p>
+                        </div>
+                        <div class="job-meta">
+                            <span>$125k–$145k</span>
+                            <span>Full-time</span>
+                            <span>Posted Jan 18, 2026</span>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">React</span>
+                            <span class="tag">A/B Testing</span>
+                            <span class="tag">Next.js</span>
+                        </div>
+                        <div class="job-actions">
+                            <span class="badge">Frontend</span>
+                            <a class="btn btn-outline" href="job-details.html">Details</a>
+                            <a class="btn btn-primary" href="form.html">Apply</a>
+                        </div>
+                    </article>
+                    <article class="card job-card">
+                        <div>
+                            <h4>UX Researcher — Consumer Apps</h4>
+                            <p>Woven Commerce · Toronto, CA · On-site</p>
+                        </div>
+                        <div class="job-meta">
+                            <span>$110k–$135k</span>
+                            <span>Full-time</span>
+                            <span>Posted Jan 17, 2026</span>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">Research</span>
+                            <span class="tag">Figma</span>
+                            <span class="tag">Workshops</span>
+                        </div>
+                        <div class="job-actions">
+                            <span class="badge">Design</span>
+                            <a class="btn btn-outline" href="job-details.html">Details</a>
+                            <a class="btn btn-primary" href="form.html">Apply</a>
+                        </div>
+                    </article>
+                    <article class="card job-card">
+                        <div>
+                            <h4>Data Analyst — Lifecycle</h4>
+                            <p>Northwind Health · New York, NY · On-site</p>
+                        </div>
+                        <div class="job-meta">
+                            <span>$95k–$120k</span>
+                            <span>Full-time</span>
+                            <span>Posted Jan 15, 2026</span>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Tableau</span>
+                            <span class="tag">Experimentation</span>
+                        </div>
+                        <div class="job-actions">
+                            <span class="badge">Data</span>
+                            <a class="btn btn-outline" href="job-details.html">Details</a>
+                            <a class="btn btn-primary" href="form.html">Apply</a>
+                        </div>
+                    </article>
+                    <article class="card job-card">
+                        <div>
+                            <h4>DevOps Engineer — Reliability</h4>
+                            <p>Signal Ridge · Remote (EMEA)</p>
+                        </div>
+                        <div class="job-meta">
+                            <span>$135k–$160k</span>
+                            <span>Full-time</span>
+                            <span>Posted Jan 14, 2026</span>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Kubernetes</span>
+                            <span class="tag">Terraform</span>
+                        </div>
+                        <div class="job-actions">
+                            <span class="badge">DevOps</span>
+                            <a class="btn btn-outline" href="job-details.html">Details</a>
+                            <a class="btn btn-primary" href="form.html">Apply</a>
+                        </div>
+                    </article>
+                    <article class="card job-card">
+                        <div>
+                            <h4>Product Marketing Manager — Fintech</h4>
+                            <p>Pinecone Capital · London, UK · Hybrid</p>
+                        </div>
+                        <div class="job-meta">
+                            <span>$105k–$130k</span>
+                            <span>Full-time</span>
+                            <span>Posted Jan 12, 2026</span>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">Positioning</span>
+                            <span class="tag">Campaigns</span>
+                            <span class="tag">Pricing</span>
+                        </div>
+                        <div class="job-actions">
+                            <span class="badge">Marketing</span>
+                            <a class="btn btn-outline" href="job-details.html">Details</a>
+                            <a class="btn btn-primary" href="form.html">Apply</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>FindJob</h4>
+                <p>Curated roles, verified teams, and a faster path to your next job.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <p><a href="jobs.html">All jobs</a></p>
+                <p><a href="form.html">Apply</a></p>
+                <p><a href="afteruidesigner.html">Design roles</a></p>
+            </div>
+            <div>
+                <h4>Popular categories</h4>
+                <p><a href="backend.html">Backend</a></p>
+                <p><a href="devops.html">DevOps</a></p>
+                <p><a href="dataanalyst.html">Data</a></p>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <p>support@findjob.io</p>
+                <p>San Francisco · Toronto · London</p>
+            </div>
         </div>
-    </div>
-
-    <header>Job Listings</header>
-
-    <div class="breadcrumbs">
-        Home &gt; <b>Jobs </b>
-    </div>
-
-<!-- Job 1 -->
-<div class="job-box">
-    <div class="job-title">1. Frontend Developer – React.js</div>
-    <div class="job-description">
-        <p><b>Location:</b> Kathmandu (Hybrid)</p>
-        <p><b>Experience:</b> 3–5 years</p>
-        <p><b>Skills:</b> React, TypeScript, Tailwind, REST APIs</p>
-    </div>
-    <button class="btn view-btn">View Details</button>
-    <a href="form.html"><button class="btn apply-btn">Apply Now</button></a>
+    </footer>
 </div>
-
-<!-- Job 2 -->
-<div class="job-box">
-    <div class="job-title">2. Backend Developer – Node.js</div>
-    <div class="job-description">
-        <p><b>Location:</b> Lalitpur (On-site)</p>
-        <p><b>Experience:</b> 2–4 years</p>
-        <p><b>Skills:</b> Node.js, Express, MongoDB</p>
-    </div>
-    <button class="btn view-btn">View Details</button>
-    <button class="btn apply-btn">Apply Now</button>
-</div>
-
-<!-- Job 3 -->
-<div class="job-box">
-    <div class="job-title">3. UX/UI Designer</div>
-    <div class="job-description">
-        <p><b>Location:</b> Toronto (Remote)</p>
-        <p><b>Experience:</b> 2–3 years</p>
-        <p><b>Skills:</b> Figma, Adobe XD, HTML/CSS basics</p>
-    </div>
-    <button class="btn view-btn">View Details</button>
-    <button class="btn apply-btn">Apply Now</button>
-</div>
-
-<!-- Job 4 -->
-<div class="job-box">
-    <div class="job-title">4. Data Analyst</div>
-    <div class="job-description">
-        <p><b>Location:</b> Kathmandu (Hybrid)</p>
-        <p><b>Experience:</b> 1–3 years</p>
-        <p><b>Skills:</b> SQL, Python, Excel, Tableau</p>
-    </div>
-    <button class="btn view-btn">View Details</button>
-    <button class="btn apply-btn">Apply Now</button>
-</div>
-
-<!-- Job 5 -->
-<div class="job-box">
-    <div class="job-title">5. Digital Marketing Specialist</div>
-    <div class="job-description">
-        <p><b>Location:</b> Lalitpur (On-site)</p>
-        <p><b>Experience:</b> 2–4 years</p>
-        <p><b>Skills:</b> SEO, Google Ads, Social Media Marketing</p>
-    </div>
-    <button class="btn view-btn">View Details</button>
-    <button class="btn apply-btn">Apply Now</button>
-</div>
-
-<!-- Job 6 -->
-<div class="job-box">
-    <div class="job-title">6. Mobile App Developer – Flutter</div>
-    <div class="job-description">
-        <p><b>Location:</b> Kathmandu (Hybrid)</p>
-        <p><b>Experience:</b> 2–5 years</p>
-        <p><b>Skills:</b> Flutter, Dart, Firebase</p>
-    </div>
-    <button class="btn view-btn">View Details</button>
-    <button class="btn apply-btn">Apply Now</button>
-</div>
-
-<!-- Job 7 -->
-<div class="job-box">
-    <div class="job-title">7. DevOps Engineer</div>
-    <div class="job-description">
-        <p><b>Location:</b> New York (Remote)</p>
-        <p><b>Experience:</b> 3–6 years</p>
-        <p><b>Skills:</b> AWS, Docker, Kubernetes, CI/CD</p>
-    </div>
-    <button class="btn view-btn">View Details</button>
-    <button class="btn apply-btn">Apply Now</button>
-</div>
-
-<!-- Job 8 -->
-<div class="job-box">
-    <div class="job-title">8. Content Writer</div>
-    <div class="job-description">
-        <p><b>Location:</b> Toronto (Remote)</p>
-        <p><b>Experience:</b> 1–3 years</p>
-        <p><b>Skills:</b> Blogging, SEO Writing, Copywriting</p>
-    </div>
-    <button class="btn view-btn">View Details</button>
-    <button class="btn apply-btn">Apply Now</button>
-</div>
-
-<!-- Job 9 -->
-<div class="job-box">
-    <div class="job-title">9. Project Manager</div>
-    <div class="job-description">
-        <p><b>Location:</b> Kathmandu (Hybrid)</p>
-        <p><b>Experience:</b> 5+ years</p>
-        <p><b>Skills:</b> Agile, Scrum, Jira, Team Management</p>
-    </div>
-    <button class="btn view-btn">View Details</button>
-    <button class="btn apply-btn">Apply Now</button>
-</div>
-
-<!-- Job 10 -->
-<div class="job-box">
-    <div class="job-title">10. QA Tester – Manual & Automation</div>
-    <div class="job-description">
-        <p><b>Location:</b> Lalitpur (On-site)</p>
-        <p><b>Experience:</b> 2–4 years</p>
-        <p><b>Skills:</b> Selenium, Manual Testing, Test Cases</p>
-    </div>
-    <button class="btn view-btn">View Details</button>
-    <button class="btn apply-btn">Apply Now</button>
-</div>
-
 </body>
 </html>

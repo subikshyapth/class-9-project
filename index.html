@@ -3,55 +3,238 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Find a Job - Homepage</title>
-
-
-    <link rel="stylesheet" href="assets/style.css">
-
+<title>FindJob | Modern Job Portal</title>
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-
-<!-- Navbar -->
-<div class="navbar">
-    <h2>FindJob</h2>
-    <div class="menu">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-            <a href="#" class="dropbtn">Category &#9662;</a>
-            <div class="dropdown-content">
-                <a href="backend.html">Backend</a>
-                <a href="afterfrontenddeveloper.html">Frontend</a>
-                <a href="contentwritter.html">Content Writer</a>
-                <a href="afteruidesigner.html">UI/UX Designer</a>
-                <a href="dataanalyst.html">Data Analyst</a>
-                <a href="devops.html">DevOps</a>
-                <a href="digitalmarketing.html">Digital Marketing</a>
-                <a href="flutter.html">Flutter</a>
-                <a href="projectmanager.html">Project Manager</a>
-                <a href="qa.html">QA</a>
+<div class="page">
+    <header class="site-header">
+        <div class="container nav">
+            <a class="brand" href="index.html"><span>Find</span><em>Job</em></a>
+            <nav class="nav-links">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="jobs.html">Jobs</a>
+                <div class="nav-dropdown">
+                    <span class="nav-link dropdown-toggle">Categories ▾</span>
+                    <div class="dropdown-panel">
+                        <a href="backend.html">Backend</a>
+                        <a href="afterfrontenddeveloper.html">Frontend</a>
+                        <a href="contentwritter.html">Content Writer</a>
+                        <a href="afteruidesigner.html">UI/UX Designer</a>
+                        <a href="dataanalyst.html">Data Analyst</a>
+                        <a href="devops.html">DevOps</a>
+                        <a href="digitalmarketing.html">Digital Marketing</a>
+                        <a href="flutter.html">Flutter</a>
+                        <a href="projectmanager.html">Project Manager</a>
+                        <a href="qa.html">QA</a>
+                    </div>
+                </div>
+                <a class="nav-link" href="form.html">Apply</a>
+            </nav>
+            <div class="nav-actions">
+                <a class="btn btn-ghost" href="login.html">Log in</a>
+                <a class="btn btn-primary" href="profile.html">Profile</a>
             </div>
         </div>
-        <a href="jobs.html">Jobs</a>
-        <a href="#">Login</a>
-        <a href="#">Sign Up</a>
-    </div>
-</div>
+    </header>
 
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="fade-up">
+                    <p class="eyebrow">Talent-ready marketplace</p>
+                    <h1>Find a role that matches your craft, not just your title.</h1>
+                    <p class="lead">Discover curated roles from product-led teams across North America, Europe, and Asia-Pacific. Real salaries, real timelines, and hiring teams who respond in days.</p>
+                    <form class="search-bar" action="jobs.html" method="get">
+                        <input class="input" type="text" name="q" placeholder="Search roles, skills, or companies" aria-label="Search jobs">
+                        <select class="select" name="location" aria-label="Select location">
+                            <option value="">Any location</option>
+                            <option>Remote</option>
+                            <option>New York, NY</option>
+                            <option>Toronto, CA</option>
+                            <option>London, UK</option>
+                            <option>Singapore</option>
+                        </select>
+                        <button class="btn btn-primary" type="submit">Search jobs</button>
+                    </form>
+                    <div class="hero-metrics">
+                        <div class="metric">
+                            <strong>1,280+</strong>
+                            Open roles
+                        </div>
+                        <div class="metric">
+                            <strong>310</strong>
+                            Hiring teams
+                        </div>
+                        <div class="metric">
+                            <strong>4.8★</strong>
+                            Candidate rating
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-card fade-up">
+                    <h3>This week’s spotlight</h3>
+                    <p><strong>Senior Product Designer</strong> · Lumen Labs</p>
+                    <p>Remote · $140k–$165k · Equity · Healthcare</p>
+                    <div class="tag-row">
+                        <span class="tag">Design Systems</span>
+                        <span class="tag sun">4 days / week</span>
+                        <span class="tag coral">Featured</span>
+                    </div>
+                    <p class="lead">Lead the design system for a fintech used by 3M customers. Work with an elite product trio and ship weekly.</p>
+                    <div class="job-actions">
+                        <a class="btn btn-outline" href="job-details.html">View role</a>
+                        <a class="btn btn-primary" href="form.html">Apply now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<!-- Homepage Hero -->
-<div class="hero">
-        <h1>Welcome to FindJob</h1>
-        <p>Your dream job is just a search away. Start by typing a job title below.</p>
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Featured roles</h2>
+                    <a class="text-link" href="jobs.html">View all jobs</a>
+                </div>
+                <div class="card-grid">
+                    <article class="card job-card fade-up">
+                        <h4>Frontend Engineer — React</h4>
+                        <p>AtlasPay · Toronto, CA · Hybrid</p>
+                        <div class="job-meta">
+                            <span>Full-time</span>
+                            <span>$120k–$145k</span>
+                            <span>Posted 3 days ago</span>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">React</span>
+                            <span class="tag">TypeScript</span>
+                        </div>
+                        <div class="job-actions">
+                            <a class="btn btn-outline" href="job-details.html">Details</a>
+                            <a class="btn btn-primary" href="form.html">Apply</a>
+                        </div>
+                    </article>
+                    <article class="card job-card fade-up">
+                        <h4>Data Analyst — Growth</h4>
+                        <p>Northwind Health · New York, NY · On-site</p>
+                        <div class="job-meta">
+                            <span>Full-time</span>
+                            <span>$95k–$120k</span>
+                            <span>Posted 1 day ago</span>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">SQL</span>
+                            <span class="tag">Tableau</span>
+                        </div>
+                        <div class="job-actions">
+                            <a class="btn btn-outline" href="job-details.html">Details</a>
+                            <a class="btn btn-primary" href="form.html">Apply</a>
+                        </div>
+                    </article>
+                    <article class="card job-card fade-up">
+                        <h4>DevOps Engineer — Cloud</h4>
+                        <p>Signal Ridge · Remote · US</p>
+                        <div class="job-meta">
+                            <span>Full-time</span>
+                            <span>$135k–$160k</span>
+                            <span>Posted 5 days ago</span>
+                        </div>
+                        <div class="tag-row">
+                            <span class="tag">AWS</span>
+                            <span class="tag">Kubernetes</span>
+                        </div>
+                        <div class="job-actions">
+                            <a class="btn btn-outline" href="job-details.html">Details</a>
+                            <a class="btn btn-primary" href="form.html">Apply</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <div class="search-box">
-            <form action="jobs.html" method="get" class="search-form">
-                <input type="text" name="q" placeholder="Search jobs, e.g., Web Developer">
-                <button type="submit">Search</button>
-            </form>
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Browse by category</h2>
+                    <span class="text-link">10 curated tracks</span>
+                </div>
+                <div class="card-grid">
+                    <a class="card category-card" href="backend.html">
+                        <h4>Backend Engineering</h4>
+                        <p>APIs, microservices, and scalable systems.</p>
+                        <span class="badge">128 roles</span>
+                    </a>
+                    <a class="card category-card" href="afterfrontenddeveloper.html">
+                        <h4>Frontend Development</h4>
+                        <p>Craft modern web experiences and UI.</p>
+                        <span class="badge">92 roles</span>
+                    </a>
+                    <a class="card category-card" href="afteruidesigner.html">
+                        <h4>UI/UX Design</h4>
+                        <p>Design research, product, and systems.</p>
+                        <span class="badge">64 roles</span>
+                    </a>
+                    <a class="card category-card" href="dataanalyst.html">
+                        <h4>Data Analytics</h4>
+                        <p>Insight, dashboards, and experimentation.</p>
+                        <span class="badge">71 roles</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container split">
+                <div class="panel fade-up">
+                    <h3>How it works</h3>
+                    <ul>
+                        <li>Tell us what you want, not just your title.</li>
+                        <li>We match you with teams who reply fast.</li>
+                        <li>Track applications with transparent steps.</li>
+                        <li>Get curated prep notes for each interview.</li>
+                    </ul>
+                </div>
+                <div class="panel fade-up">
+                    <h3>Hiring now</h3>
+                    <p class="lead">Teams building fintech, healthtech, climate, and creator tools.</p>
+                    <div class="logo-grid">
+                        <div class="logo-tile">Lumen Labs</div>
+                        <div class="logo-tile">AtlasPay</div>
+                        <div class="logo-tile">Brightline</div>
+                        <div class="logo-tile">Woven</div>
+                        <div class="logo-tile">Pulseworks</div>
+                        <div class="logo-tile">Signal Ridge</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>FindJob</h4>
+                <p>Curated roles, verified teams, and a faster path to your next job.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <p><a href="jobs.html">All jobs</a></p>
+                <p><a href="form.html">Apply</a></p>
+                <p><a href="afteruidesigner.html">Design roles</a></p>
+            </div>
+            <div>
+                <h4>Popular categories</h4>
+                <p><a href="backend.html">Backend</a></p>
+                <p><a href="devops.html">DevOps</a></p>
+                <p><a href="dataanalyst.html">Data</a></p>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <p>support@findjob.io</p>
+                <p>San Francisco · Toronto · London</p>
+            </div>
         </div>
+    </footer>
 </div>
-
-
-
 </body>
 </html>
